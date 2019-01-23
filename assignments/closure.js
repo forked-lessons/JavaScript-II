@@ -21,11 +21,17 @@ myFunction("Howard");
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   let counter = 0;
-  return function () {
+  return () => {
     return ++counter;
   }
 };
 
+// const counter = function () {
+//   let counter = 0;
+//   return function () {
+//     return ++counter;
+//   }
+// }
 // Return a function that when invoked increments and returns a counter variable.
 const newCounter = counter();
 newCounter(); // 1
